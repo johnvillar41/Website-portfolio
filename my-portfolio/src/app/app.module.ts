@@ -6,29 +6,21 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
 import { ChipsComponent } from './chips/chips.component';
-import { MatChipsModule } from '@angular/material/chips';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
     ToolbarComponent,
-    ChipsComponent
+    ChipsComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatChipsModule
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
