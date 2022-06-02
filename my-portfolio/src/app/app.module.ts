@@ -11,6 +11,7 @@ import { DetailComponent } from './detail/detail.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { FooterComponent } from './footer/footer.component';
 import { PracticumOverviewComponent } from './practicum-overview/practicum-overview.component';
+import { AppendicesComponent } from './appendices/appendices.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PracticumOverviewComponent } from './practicum-overview/practicum-overv
     DetailComponent,
     CertificationsComponent,
     FooterComponent,
-    PracticumOverviewComponent
+    PracticumOverviewComponent,
+    AppendicesComponent
   ],
   imports: [
     BrowserModule,
