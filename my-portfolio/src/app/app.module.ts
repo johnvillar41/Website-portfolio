@@ -10,6 +10,7 @@ import { ChipsComponent } from './chips/chips.component';
 import { DetailComponent } from './detail/detail.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { FooterComponent } from './footer/footer.component';
+import { PracticumOverviewComponent } from './practicum-overview/practicum-overview.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ChipsComponent,
     DetailComponent,
     CertificationsComponent,
-    FooterComponent
+    FooterComponent,
+    PracticumOverviewComponent
   ],
   imports: [
     BrowserModule,
