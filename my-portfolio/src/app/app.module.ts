@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ChipsComponent } from './chips/chips.component';
 import { DetailComponent } from './detail/detail.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DetailComponent } from './detail/detail.component';
     ProjectsComponent,
     ToolbarComponent,
     ChipsComponent,
-    DetailComponent
+    DetailComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
