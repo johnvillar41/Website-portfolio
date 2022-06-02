@@ -9,6 +9,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ChipsComponent } from './chips/chips.component';
 import { DetailComponent } from './detail/detail.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CertificationsComponent } from './certifications/certifications.compone
     ToolbarComponent,
     ChipsComponent,
     DetailComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
