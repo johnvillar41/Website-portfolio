@@ -1,38 +1,16 @@
 <div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
-  <div class="col">
-    <div class="h-100 p-5 text-white bg-dark rounded-3 card">
-      <h2>Flame And Wax</h2>
-      <p>A website e-commerce application created using .NetCore MVC Framework C# Application.</p>
-      <a class="btn btn-outline-light" href="https://github.com/johnvillar41/FlameAndWax-Web-Application"
-        type="button">Go to Github Link <i class="fa-regular fa-paper-plane"></i></a>
+  <div class="col" *ngFor="let project of projects">
+    <div *ngIf="project.isDark === true" class="h-100 p-5 text-white bg-dark rounded-3 card">
+      <h2>{{project.projectTitle}}</h2>
+      <p>{{project.projectDescription}}</p>
+      <a class="btn btn-outline-light" href="{{project.githubLink}}" type="button">Go to Github Link <i
+          class="fa-regular fa-paper-plane"></i></a>
     </div>
-  </div>
-  <div class="col">
-    <div class="h-100 p-5 bg-light text-dark border rounded-3 card">
-      <h2>BGC Mobile Development</h2>
-      <p>A android e-commerce application created using Native Android Framework and Java Language.</p>
-      <a class="btn btn-outline-dark" href="https://github.com/johnvillar41/BGC-Mobile-Development" type="button">Go to Github Link <i class="fa-regular fa-paper-plane"></i></a>
-    </div>
-  </div>
-  <div class="col">
-    <div class="h-100 p-5 bg-light text-dark border rounded-3 card">
-      <h2>BGC Web Development</h2>
-      <p>A website e-commerce application created using ASP.NET Webforms Framework and C# Language.</p>
-      <a class="btn btn-outline-dark" href="https://github.com/johnvillar41/BGC-Web-Development" type="button">Go to Github Link <i class="fa-regular fa-paper-plane"></i></a>
-    </div>
-  </div>
-  <div class="col">
-    <div class="h-100 p-5 border bg-dark rounded-3 text-white card">
-      <h2>Sentiment Analysis Tool Web</h2>
-      <p>A website created for Computing sentiments using .NetCore MVC Framework C# Application.</p>
-      <a class="btn btn-outline-light" href="https://github.com/johnvillar41/SentimentAnalysisTool.Web" type="button">Go to Github Link <i class="fa-regular fa-paper-plane"></i></a>
-    </div>
-  </div>
-  <div class="col">
-    <div class="h-100 p-5 border bg-dark rounded-3 text-white card">
-      <h2>Sentiment Analysis Tool Api</h2>
-      <p>An API for Computing sentiments using .NetCore Web API Framework C# Application.</p>
-      <a class="btn btn-outline-light" href="https://github.com/johnvillar41/SentimentAnalysisTool.Api" type="button">Go to Github Link <i class="fa-regular fa-paper-plane"></i></a>
+    <div *ngIf="project.isDark === false" class="h-100 p-5 text-dark bg-light rounded-3 card">
+      <h2>{{project.projectTitle}}</h2>
+      <p>{{project.projectDescription}}</p>
+      <a class="btn btn-outline-dark" href="{{project.githubLink}}" type="button">Go to Github Link <i
+          class="fa-regular fa-paper-plane"></i></a>
     </div>
   </div>
 </div>
