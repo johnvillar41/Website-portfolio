@@ -67,7 +67,7 @@ export class PracticumOverviewComponent implements OnInit {
       moduleDescription: "LinkedIn Learning Apr 2019",
       dateFinished: '5/15/2022'
     }
-    this.specializationLearningModules.push(projectManagementFoundations);
+    this.specializationLearningModules.push(uxUi);
     this.specializationLearningModules.push(projectManagementFoundations);
   }
 
