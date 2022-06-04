@@ -74,6 +74,7 @@ export class PracticumOverviewComponent implements OnInit {
   ngOnInit(): void {
     this.onInitializeRequiredLearningModules();
     this.onInitializeProjectManagementLearningModules();
+    this.onInitializeSpecializationModules();
   }
 
 }
