@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PracticumOverviewComponent } from './practicum-overview/practicum-overview.component';
 import { AppendicesComponent } from './appendices/appendices.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SynthesisComponent } from './synthesis/synthesis.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CertificationsComponent,
     FooterComponent,
     PracticumOverviewComponent,
-    AppendicesComponent
+    AppendicesComponent,
+    SynthesisComponent
   ],
   imports: [
     BrowserModule,
