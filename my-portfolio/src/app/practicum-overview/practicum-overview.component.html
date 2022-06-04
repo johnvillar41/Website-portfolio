@@ -92,51 +92,15 @@
       </ul>
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-      <div class="col">
+      <div *ngFor="let module of requiredLearningModules" class="col">
         <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C4E0DAQH0NlVz7oejfQ/learning-author-crop_200_200/0/1580242490409?e=1654779600&v=beta&t=TtzGkmkkU8-CEqiT4kDQPqhQsizwmlPE6GuCs73mYeA"
-            class="card-img-top" alt="...">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
-            <h4 class="card-title fw-bold">Problem Solving Techniques</h4>
-            <p class="card-text">LinkedIn Learning
-              By: Chris Croft
-              Apr 2017</p>
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}</p>
           </div>
           <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> 6/2/2022
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560DAQFEZp86sl3IrQ/learning-author-crop_200_200/0/1576191065001?e=1654779600&v=beta&t=nD8Kje92JPgQ0AuX-x933weGlxJ0JtzAZlGuwQHB7is"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title fw-bold">Learning Design Thinking: Lead Change in Your Organization</h4>
-            <p class="card-text">LinkedIn Learning
-              By: Turi McKinley and frog
-              Jan 2016</p>
-          </div>
-          <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> 5/27/2022
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_100_100/0/1638831589865?e=1661990400&v=beta&t=1nv_HetlsUq_hg64OcN7ODPyvyrjicckgGX3IrZB3H8"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title fw-bold">Develop Your Creative Thinking and Innovation Skills </h4>
-            <p class="card-text">
-              LinkedIn Learning
-              Apr 2020</p>
-          </div>
-          <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> 5/7/2022
+            <h4 class="card-title fw-bold">Date finished: </h4> {{module.dateFinished}}
           </div>
         </div>
       </div>
@@ -168,35 +132,16 @@
       </div>
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-      <div class="col">
+      <div *ngFor="let module of projectLearningModules" class="col">
         <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C4E0DAQEdUPGczlfRfA/learning-author-crop_200_200/0/1643745237486?e=1654779600&v=beta&t=VgymvVXsah7NVthODc2lQGcMB3gCkRZodjQ2PC3GkV4"
-            class="card-img-top" alt="...">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
-            <h4 class="card-title fw-bold">Project Management Foundations</h4>
-            <p class="card-text">Bonnie Biafore
-              Jun 2019
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}
             </p>
           </div>
           <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> 5/21/2022
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_100_100/0/1638831589865?e=1661990400&v=beta&t=1nv_HetlsUq_hg64OcN7ODPyvyrjicckgGX3IrZB3H8"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title fw-bold">Become an Agile Project Manager</h4>
-            <p class="card-text">LinkedIn Learning
-              May 2019
-            </p>
-          </div>
-          <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> 5/21/2022
+            <h4 class="card-title fw-bold">Date finished: </h4>{{module.dateFinished}}
           </div>
         </div>
       </div>
@@ -212,39 +157,19 @@
       </div>
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-      <div class="col">
+      <div *ngFor="let module of specializationLearningModules" class="col">
         <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_100_100/0/1638831589865?e=1661990400&v=beta&t=1nv_HetlsUq_hg64OcN7ODPyvyrjicckgGX3IrZB3H8"
-            class="card-img-top" alt="...">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
-            <h4 class="card-title fw-bold">Improve Your UX Design Skills</h4>
-            <p class="card-text">LinkedIn Learning
-              Jun 2018
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}
             </p>
           </div>
           <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> Completed 5/4/2022
+            <h4 class="card-title fw-bold">Date finished: </h4> {{module.dateFinished}}
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_100_100/0/1638831589865?e=1661990400&v=beta&t=1nv_HetlsUq_hg64OcN7ODPyvyrjicckgGX3IrZB3H8"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title fw-bold">Project Management Foundations</h4>
-            <p class="card-text">LinkedIn Learning
-              Apr 2019
-            </p>
-          </div>
-          <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> Completed 5/15/2022
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
