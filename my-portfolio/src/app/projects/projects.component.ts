@@ -42,11 +42,25 @@ export class ProjectsComponent implements OnInit {
       githubLink: "https://github.com/johnvillar41/SentimentAnalysisTool.Api",
       isDark: true
     }
+    let projectTrelloClone: ProjectModel = {
+      projectTitle: "Trello Clone",
+      projectDescription: "A Simple Clone of trello using Xamarin.Android",
+      githubLink: "https://github.com/johnvillar41/Trello-Clone-Xamarin.Android",
+      isDark: false
+    }
+    let projectPortfolio: ProjectModel = {
+      projectTitle: "Project Portfolio",
+      projectDescription: "Project Portfolio created using Angular Framework",
+      githubLink: "https://github.com/johnvillar41/Website-portfolio",
+      isDark: false
+    }
     this.projects.push(projectFlameAndWax);
     this.projects.push(projectBGCMobile);
     this.projects.push(projectBGCWeb);
     this.projects.push(projectSentimentAnalysisWeb);
     this.projects.push(projectSentimentAnalysisApi);
+    this.projects.push(projectTrelloClone);
+    this.projects.push(projectPortfolio);
   }
 
 }
