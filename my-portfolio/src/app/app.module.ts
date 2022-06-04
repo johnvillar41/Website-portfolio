@@ -12,6 +12,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { FooterComponent } from './footer/footer.component';
 import { PracticumOverviewComponent } from './practicum-overview/practicum-overview.component';
 import { AppendicesComponent } from './appendices/appendices.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AppendicesComponent } from './appendices/appendices.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
