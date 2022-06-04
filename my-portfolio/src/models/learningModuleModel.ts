@@ -3,4 +3,5 @@ export interface LearningModuleModel {
   moduleTitle: string;
   moduleDescription: string;
   dateFinished: string;
+  isDark: boolean;
 }

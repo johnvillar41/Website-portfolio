@@ -93,7 +93,7 @@
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
       <div *ngFor="let module of requiredLearningModules" class="col">
-        <div class="card">
+        <div class="card h-100" *ngIf="module.isDark === false">
           <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
@@ -103,19 +103,14 @@
             <h4 class="card-title fw-bold">Date finished: </h4> {{module.dateFinished}}
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_100_100/0/1638831589865?e=1661990400&v=beta&t=1nv_HetlsUq_hg64OcN7ODPyvyrjicckgGX3IrZB3H8"
-            class="card-img-top" alt="...">
+        <div class="card h-100 bg-dark text-white" *ngIf="module.isDark === true">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
-            <h4 class="card-title fw-bold">Develop Critical-Thinking, Decision-Making, and Problem-Solving Skills</h4>
-            <p class="card-text">
-              LinkedIn Learning May 2020</p>
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}</p>
           </div>
           <div class="card-footer">
-            <h4 class="card-title fw-bold">Date finished: </h4> Completed 6/2/2022
+            <h4 class="card-title fw-bold">Date finished: </h4> {{module.dateFinished}}
           </div>
         </div>
       </div>
@@ -133,7 +128,18 @@
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
       <div *ngFor="let module of projectLearningModules" class="col">
-        <div class="card">
+        <div class="card h-100" *ngIf="module.isDark === false">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}
+            </p>
+          </div>
+          <div class="card-footer">
+            <h4 class="card-title fw-bold">Date finished: </h4>{{module.dateFinished}}
+          </div>
+        </div>
+        <div class="card h-100 bg-dark text-white" *ngIf="module.isDark === true">
           <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
@@ -158,7 +164,18 @@
     </div>
     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
       <div *ngFor="let module of specializationLearningModules" class="col">
-        <div class="card">
+        <div class="card h-100" *ngIf="module.isDark === false">
+          <img src={{module.imageLink}} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>
+            <p class="card-text">{{module.moduleDescription}}
+            </p>
+          </div>
+          <div class="card-footer">
+            <h4 class="card-title fw-bold">Date finished: </h4> {{module.dateFinished}}
+          </div>
+        </div>
+        <div class="card h-100 bg-dark text-white" *ngIf="module.isDark === true">
           <img src={{module.imageLink}} class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title fw-bold">{{module.moduleTitle}}</h4>

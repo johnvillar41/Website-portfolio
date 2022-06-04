@@ -8,7 +8,10 @@ import { CertificationModel } from 'src/models/certificationModel';
 })
 export class CertificationsComponent implements OnInit {
 
-  certifications: CertificationModel[] = [];
+  certificationsCarousel1: CertificationModel[] = [];
+  certificationsCarousel2: CertificationModel[] = [];
+  certificationsCarousel3: CertificationModel[] = [];
+  certificationsCarousel4: CertificationModel[] = [];
   constructor() { }
 
   ngOnInit(): void {
@@ -56,16 +59,16 @@ export class CertificationsComponent implements OnInit {
       certificationTitle: "Become a Cloud Developer",
       certificationImageLink: "https://johnvillar41.github.io/Website-portfolio/assets/images/CertificateOfCompletion_Become%20a%20Cloud%20Developer-1.png"
     };
-    this.certifications.push(machineVisionCert);
-    this.certifications.push(gitCert);
-    this.certifications.push(uiUxCert);
-    this.certifications.push(cloudCert);
-    this.certifications.push(learningDesignThinkingCert);
-    this.certifications.push(creativeThinkingCert);
-    this.certifications.push(criticalThinkingCert);
-    this.certifications.push(projectManagementFoundationsCert);
-    this.certifications.push(projectManagerCert);
-    this.certifications.push(cloudDeveloperCert);
+    this.certificationsCarousel1.push(machineVisionCert);
+    this.certificationsCarousel1.push(gitCert);
+    this.certificationsCarousel1.push(uiUxCert);
+    this.certificationsCarousel2.push(cloudCert);
+    this.certificationsCarousel2.push(learningDesignThinkingCert);
+    this.certificationsCarousel2.push(creativeThinkingCert);
+    this.certificationsCarousel3.push(criticalThinkingCert);
+    this.certificationsCarousel3.push(projectManagementFoundationsCert);
+    this.certificationsCarousel3.push(projectManagerCert);
+    this.certificationsCarousel4.push(cloudDeveloperCert);
   }
 
   onImageLinkClicked(certificationLink: string): void {
