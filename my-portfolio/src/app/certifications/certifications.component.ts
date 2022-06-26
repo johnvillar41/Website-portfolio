@@ -72,6 +72,10 @@ export class CertificationsComponent implements OnInit {
   }
 
   onImageLinkClicked(certificationLink: string): void {
+    if (certificationLink === 'https://johnvillar41.github.io/Website-portfolio/assets/images/Aws_CloudComputing.PNG') {
+      window.open('https://www.credly.com/badges/ce141a83-f038-4e74-bb0a-1884ca5fc9b6')
+      return;
+    }
     window.open(certificationLink, '_blank');
   }
 
